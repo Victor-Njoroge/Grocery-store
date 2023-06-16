@@ -30,6 +30,9 @@ html{
 body{
     background: #eee;
 }
+section{
+    padding: 2rem 9%;
+}
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -39,6 +42,7 @@ body{
     border: .2rem solid var(--black);
     color: var(--black);
     cursor: pointer;
+    border: 1px solid var(--orange);
 }
 .btn:hover{
     background: var(--orange);
@@ -250,4 +254,101 @@ body{
  .header .login-form p a{
     color: var(--orange);
     text-decoration: underline;
+ }
+
+ .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/lychee-3545104_1280.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+ }
+
+ .home .content{
+    text-align: center;
+    width: 60rem;
+ }
+ .home .content h3{
+    color: white;
+    font-size: 3rem;
+ }
+ .home .content h3 span{
+    color: var(--orange);
+ }
+ .home .content p{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+ }
+ .home .content .btn{
+    color: var(--black);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width:991px){
+    html{
+        font-size: 55%; 
+    }
+
+    .header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .header .search-form{
+        width: 90%;
+    }
+ }
+
+ @media (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+     
+    .header .navbar.active{
+        right:2rem;
+        transition: .4s linear;
+    }
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+ }
+ 
+
+
+ @media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
  }
