@@ -206,3 +206,48 @@ body{
     margin: 1rem;
     border: 1px solid var(--orange);
  }
+
+ .header .login-form{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+ }
+ .header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+ }
+ .header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+ }
+ .header .login-form .box{
+    margin: .7rem 0;
+    width: 100%;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+ }
+ .header .login-form .btn{
+    border: 1px solid var(--orange);
+ }
+
+ .header .login-form p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+ }
+
+ .header .login-form p a{
+    color: var(--orange);
+    text-decoration: underline;
+ }
